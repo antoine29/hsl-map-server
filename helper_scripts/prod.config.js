@@ -231,33 +231,5 @@ module.exports = {
       })
     },
     ...rasterHeaders,
-  },
-
-  // Stops and stations map
-  // for some reason this ep works only with hsl-stop-map on its path
-  "/map/v3/hsl-stop-map": {
-    "source": {
-      "protocol": "geojson:",
-      "query": {},
-      "minzoom": 5,
-      "maxzoom": 20,
-      "indexMaxZoom": 20,
-      "bounds": [
-        -68.33126724917717,
-        -16.698655471273753,
-        -67.97870332695354,
-        -16.41463161350279
-      ],
-      "center": [-68.15498528806535, -16.556643542388272, 14],
-      "name": "Stops",
-      "sources": [{
-        "id": "stops",
-        "file": `${DATA_DIR}/hsl-stops.geojson`,
-      }, {
-        "id": "stations",
-        "file": `${DATA_DIR}/hsl-stations.geojson`,
-      }]
-    },
-    ...vectorHeaders,
-  },
+  }
 };

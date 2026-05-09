@@ -1,0 +1,13 @@
+[plugins]
+yarn = "https://github.com/mise-plugins/mise-yarn.git"
+
+[tools]
+node = "20.18"
+yarn = "latest"
+
+[env]
+HSL_OTP_URL = "http://localhost:8081/otp/gtfs/v1"
+
+# HSL_OTP_URL = "https://api.digitransit.fi/routing/v2/hsl/gtfs/v1" # prod env
+# HSL_API_KEY = "6f21e76..." # to be used as header "digitransit-subscription-key: 6f2.."
+
